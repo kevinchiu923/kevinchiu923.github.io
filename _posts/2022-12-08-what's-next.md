@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Welcome to my garage!
+title: What's next...!?
 subheading: A brand new starting point of my life.
 author: Jeffrey
 categories: jekyll
