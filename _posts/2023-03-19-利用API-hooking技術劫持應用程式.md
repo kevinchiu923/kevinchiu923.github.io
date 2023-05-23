@@ -5,7 +5,7 @@ subheading: A brand new starting point of my life.
 author: Jeffrey
 categories: jekyll
 banner:
-  video: /assets/videos/Mountain_road.mp4
+  video: 
   loop: true
   volume: 0.8
   start_at: 8.5
@@ -14,7 +14,7 @@ banner:
   background: "#000"
   height: "100vh"
   min_height: "38vh"
-  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
+  heading_style: "font-size: 3em; font-weight: bold; text-decoration: underline"
   subheading_style: "color: gold"
 tags: jekyll theme yat
 sidebar: []
