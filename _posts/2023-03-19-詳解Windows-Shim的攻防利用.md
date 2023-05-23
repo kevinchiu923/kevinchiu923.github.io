@@ -7,20 +7,20 @@ categories: jekyll
 banner:
   video: 
   loop: true
-  volume: 0.8
-  start_at: 8.5
+  volume: 
+  start_at: 
   image:
-  opacity: 0.618
-  background: "#000"
-  height: "100vh"
-  min_height: "38vh"
-  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
-  subheading_style: "color: gold"
+  opacity:
+  background:
+  height: 
+  min_height: 
+  heading_style: 
+  subheading_style: 
 tags: jekyll theme yat
 sidebar: []
 ---
 
-#### 詳解Windows Shim的攻防利用
+# 詳解Windows Shim的攻防利用
 
 ## 前言
 ---
