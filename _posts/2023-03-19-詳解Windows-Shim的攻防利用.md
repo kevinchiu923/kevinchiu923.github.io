@@ -20,9 +20,6 @@ tags: jekyll theme yat
 sidebar: []
 ---
 
-# 詳解Windows Shim的攻防利用
-
-# 詳解Windows Shim的攻防利用
 ## 詳解Windows Shim的攻防利用
 ### 前言
 ---
