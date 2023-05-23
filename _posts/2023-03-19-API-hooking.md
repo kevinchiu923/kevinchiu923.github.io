@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 利用API hooking技術劫持應用程式
+title: API hooking
 subheading: A brand new starting point of my life.
 author: Jeffrey
 categories: jekyll
