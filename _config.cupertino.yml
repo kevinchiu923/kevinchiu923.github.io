@@ -31,7 +31,7 @@ footer:
     # RSA CLI: https://github.com/MrWillCom/rsa-cli
   Me:
     GitHub: https://github.com/kevinchiu923
-footer_extra_description: [extra-description]
+# footer_extra_description: [extra-description]
 
 # ====== License ======
 license: <license-name>
