@@ -10,11 +10,11 @@ nav:
     Friends: /friends
     Projects: /projects
     About: /about
-    GitHub: https://github.com/MrWillCom
-    CodePen: https://codepen.io/mrwillcom
-    Patreon: https://www.patreon.com/MrWillCom
-    Mastodon: https://noc.social/@MrWillCom
-    Discord: https://discord.gg/UKuFDjcfY8
+    GitHub: https://github.com/kevinchiu923
+    # CodePen: https://codepen.io/mrwillcom
+    # Patreon: https://www.patreon.com/MrWillCom
+    # Mastodon: https://noc.social/@MrWillCom
+    # Discord: https://discord.gg/UKuFDjcfY8
     Search: /search
 
 # ====== Footer ======
@@ -27,10 +27,10 @@ footer:
     About: /about
     RSS: /atom.xml
   Projects:
-    Hexo Theme Cupertino: https://github.com/MrWillCom/hexo-theme-cupertino
-    RSA CLI: https://github.com/MrWillCom/rsa-cli
+    # Hexo Theme Cupertino: https://github.com/MrWillCom/hexo-theme-cupertino
+    # RSA CLI: https://github.com/MrWillCom/rsa-cli
   Me:
-    GitHub: https://github.com/MrWillCom
+    GitHub: https://github.com/kevinchiu923
 footer_extra_description: [extra-description]
 
 # ====== License ======
