@@ -1,0 +1,68 @@
+# ====== Metadata ======
+favicon: <path-to-favicon>
+manifest: <path-to-manifest>
+
+# ====== Navigation ======
+nav:
+  title: Blog
+  items:
+    Archives: /archives
+    Friends: /friends
+    Projects: /projects
+    About: /about
+    GitHub: https://github.com/MrWillCom
+    CodePen: https://codepen.io/mrwillcom
+    Patreon: https://www.patreon.com/MrWillCom
+    Mastodon: https://noc.social/@MrWillCom
+    Discord: https://discord.gg/UKuFDjcfY8
+    Search: /search
+
+# ====== Footer ======
+footer:
+  Blog:
+    Blog: /
+    Archives: /archives
+    Search: /search
+    Projects: /projects
+    About: /about
+    RSS: /atom.xml
+  Projects:
+    Hexo Theme Cupertino: https://github.com/MrWillCom/hexo-theme-cupertino
+    RSA CLI: https://github.com/MrWillCom/rsa-cli
+  Me:
+    GitHub: https://github.com/MrWillCom
+footer_extra_description: [extra-description]
+
+# ====== License ======
+license: <license-name>
+license_link: <license-link>
+
+# ====== Color Scheme ======
+color_scheme: [light/dark/auto]
+show_color_scheme_toggle: true
+
+# ====== TOC ======
+toc: true
+toc_max_depth: 2
+
+# ====== Scroll Reveal ======
+scroll_reveal: true
+
+# ====== Search ======
+search: true
+search_path: search.json
+
+# ====== Rainbow Banner ======
+# rainbow!
+rainbow_banner: true
+rainbow_banner_colors:
+  - '#e50000'
+  - '#ff8d00'
+  - '#ffee00'
+  - '#008121'
+  - '#004cff'
+  - '#760188'
+# choose from [auto, always]
+rainbow_banner_shown: auto
+# Pride Month by default
+rainbow_banner_month: 6
