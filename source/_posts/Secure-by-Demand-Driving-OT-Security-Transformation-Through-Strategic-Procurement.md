@@ -46,8 +46,8 @@ toc: false
 > **Secure by Demand 的關鍵在於：買方成為 OT 安全的第一道關卡。**
 
 透過要求上述安全特徵，買方可：
-- **驅動廠商強化產品資安設計
-- 避免後期補救導致高昂成本**
+- **驅動廠商強化產品資安設計**
+- **避免後期補救導致高昂成本**
 - **提前因應歐盟 [NIS2](https://digital-strategy.ec.europa.eu/en/policies/nis2-directive)、[Cyber Resilience Act](https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act) 等合規要求**
 
 同時，也能逐步汰換使用壽命長、難以更新的老舊設備，為數位轉型鋪路。
