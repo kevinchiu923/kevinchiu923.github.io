@@ -43,12 +43,12 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
-  enable: false
+  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -109,7 +109,6 @@ deploy:
   type: git
   repo: https://github.com/kevinchiu923/kevinchiu923.github.io.git
   branch: main
-
 
 hero_exit_while_scrolling:
   enabled: true
