@@ -12,11 +12,15 @@ toc: false
 
 在現今工業控制系統（ICS）與營運技術（OT）面臨日益嚴峻的網路威脅下，CISA、NSA、FBI 協同多國政府單位於 2025/1/13 聯合發布《[Secure by Demand - 營運技術所有者和營運商選擇數位產品時的優先考慮事項](https://www.cisa.gov/resources-tools/resources/secure-demand-priority-considerations-operational-technology-owners-and-operators-when-selecting)》指南，提供 OT 系統採購者一套以資安為主軸的產品選購優先事項，藉此推動供應鏈從「***Secure by Design***」邁向「***Secure by Default***」。
 
+---
+
 ## 為什麼 OT 安全必須「從採購開始」？
 傳統 OT 系統長期以可用性與穩定性為優先，導致資安設計被犧牲。如今攻擊者不再針對單一企業，而是鎖定共通的 OT 弱點 (諸如弱密碼、預設憑證、不安全協定與缺乏日誌機制......等)，一但駭客進行攻擊即會造成大規模淪陷。
 
 > **Secure by Demand 轉變思維：不再仰賴買家後期彌補資安漏洞，而是從產品選型階段，要求供應商預設具備資安防護機制。**
->
+
+---
+
 ## 12 項 OT 產品安全選購重點
 1. **組態管理（Configuration Management）**：須具備變更記錄、授權驗證與安全備份機制，防止惡意配置被持久化。
 
@@ -42,6 +46,8 @@ toc: false
 
 12. **更新與修補機制（Upgrade and Patch Tooling）**：提供自動驗證更新、相關文件完善的升級流程、並支援無縫移轉至新作業系統。
 
+---
+
 ## 建立安全採購文化：買方的角色轉變
 > **Secure by Demand 的關鍵在於：買方成為 OT 安全的第一道關卡。**
 
@@ -52,13 +58,17 @@ toc: false
 
 同時，也能逐步汰換使用壽命長、難以更新的老舊設備，為數位轉型鋪路。
 
+---
+
 ## 建議採購流程實踐要點
 - 在招標文件中明確要求安全功能與驗證標準（如 [ISA/IEC 62443](https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards)）
 - 評估供應商是否提供免費的漏洞修補與資安支援週期
 - 要求提供產品威脅模型、SBOM、安全設計白皮書
 - 優先選用支援 MFA、零信任架構、開放標準的產品
 
-#### **結語：資安，不只是技術問題，更是採購決策**
+---
+
+## **結語：資安，不只是技術問題，更是採購決策**
 >**Secure by Demand 強調：若安全不是預設，最終將付出更高代價。**
 
 對 OT 業主而言，採購就是防線起點；對廠商而言，產品內建資安就是未來競爭力的關鍵。

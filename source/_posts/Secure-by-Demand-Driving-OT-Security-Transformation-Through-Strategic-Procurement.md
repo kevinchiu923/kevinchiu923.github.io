@@ -13,6 +13,8 @@ In response to the growing cybersecurity threats facing today’s Industrial Con
 
 This guide provides OT asset owners and operators with a set of **security-centric procurement priorities**, aimed at accelerating the shift from “***Secure by Design***” to “***Secure by Default***” across the digital product supply chain.
 
+---
+
 ## Why Should OT Security Start with Procurement?
 Historically, OT systems have emphasized availability and stability, often at the cost of integrated cybersecurity.
 
@@ -21,7 +23,9 @@ Today, attackers no longer target a single organization—they exploit **common 
 **Secure by Demand** represents a mindset shift:
 
 > **Rather than relying on buyers to patch security gaps post-deployment, it calls for vendors to deliver secure-by-default products from the outset.**
->
+
+---
+
 ## 12 Security Priorities for Selecting OT Products
 **1. Configuration Management**
 Must include change tracking, authorization verification, and secure backup mechanisms to prevent persistent malicious configurations.
@@ -59,6 +63,8 @@ It should follow comprehensive CVE processes, support coordinated vulnerability 
 **12. Upgrade and Patch Tooling**
 Must support secure update verification, well-documented upgrade procedures, and **seamless OS migration** without additional cost.
 
+---
+
 ## Cultivating a Culture of Secure Procurement: The Buyer’s Role
 > **At the core of Secure by Demand is a powerful message: Buyers are the first line of defense in OT cybersecurity.**
 
@@ -70,13 +76,17 @@ By demanding products that meet the above security priorities, buyers can:
 
 At the same time, this approach facilitates the **gradual replacement of aging, hard-to-update systems**, paving the way for sustainable digital transformation.
 
+---
+
 ## Practical Tips for Secure Procurement
 - Explicitly define security features and certification standards (e.g.,[ ISA/IEC 62443](https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards)) in procurement documents
 - Evaluate whether vendors provide **free vulnerability remediation** and long-term security support
 - Require **threat models, SBOMs, and secure design documentation** as part of vendor deliverables
 - Prioritize products that support **MFA, zero-trust architecture**, and **open standards**
 
-#### **Conclusion: Cybersecurity is Not Just a Technical Concern - It’s a Procurement Decision**
+---
+
+## **Conclusion: Cybersecurity is Not Just a Technical Concern - It’s a Procurement Decision**
 **Secure by Demand** reinforces a critical truth:
 >**If security is not built-in by default, the ultimate cost will be much higher.**
 
