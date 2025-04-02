@@ -1,7 +1,7 @@
 ---
 title: >-
   Secure by Demand：以採購驅動 OT 系統安全轉型
-date: 2025-03-26 00:00:01
+date: 2025-03-26 22:00:00
 tags:
 toc: false
 ---
