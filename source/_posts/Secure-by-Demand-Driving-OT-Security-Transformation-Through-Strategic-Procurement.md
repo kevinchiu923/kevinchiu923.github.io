@@ -3,9 +3,11 @@ title: >-
   Secure by Demand：以採購驅動 OT 系統安全轉型
 date: 2025-03-26 00:00:00
 tags:
+toc: false
 ---
 
-![Source: Cybersecurity and Infrastructure Security Agency](Secure-by-Demand-Driving-OT-Security-Transformation-Through-Strategic-Procurement/cover_img.jpeg)
+![](Secure-by-Demand-Driving-OT-Security-Transformation-Through-Strategic-Procurement/cover_img.jpeg)
+<center>Source: Cybersecurity and Infrastructure Security Agency</center>
 
 
 在現今工業控制系統（ICS）與營運技術（OT）面臨日益嚴峻的網路威脅下，CISA、NSA、FBI 協同多國政府單位於 2025/1/13 聯合發布《[Secure by Demand - 營運技術所有者和營運商選擇數位產品時的優先考慮事項](https://www.cisa.gov/resources-tools/resources/secure-demand-priority-considerations-operational-technology-owners-and-operators-when-selecting)》指南，提供 OT 系統採購者一套以資安為主軸的產品選購優先事項，藉此推動供應鏈從「***Secure by Design***」邁向「***Secure by Default***」。
