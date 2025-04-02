@@ -86,7 +86,7 @@ At the same time, this approach facilitates the **gradual replacement of aging, 
 
 ---
 
-## **Conclusion: Cybersecurity is Not Just a Technical Concern - It’s a Procurement Decision**
+## Conclusion: Cybersecurity is Not Just a Technical Concern - It’s a Procurement Decision
 **Secure by Demand** reinforces a critical truth:
 >**If security is not built-in by default, the ultimate cost will be much higher.**
 
