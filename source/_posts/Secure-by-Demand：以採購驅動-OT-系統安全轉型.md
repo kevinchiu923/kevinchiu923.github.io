@@ -4,8 +4,9 @@ title: >-
 date: 2025-03-26 22:00:00
 tags:
   - Traditional Chinese
-  - 工業控制系統
-  - 資訊安全
+  - 運營技術
+  - 關鍵基礎設施安全與韌性
+  - 網路安全最佳實踐
 categories:
   - Knowledge base
 ---

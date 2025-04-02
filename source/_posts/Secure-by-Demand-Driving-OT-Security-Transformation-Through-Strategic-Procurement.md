@@ -4,8 +4,9 @@ title: >-
 date: 2025-03-26 22:00:00
 tags:
   - English
-  - Industrial control system
-  - Cyber security
+  - Operational technology
+  - Critical Infrastructure Security and Resilience
+  - Cybersecurity Best Practices
 categories:
   - Knowledge base
 ---

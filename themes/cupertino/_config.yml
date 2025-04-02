@@ -44,9 +44,17 @@ rainbow_banner_shown: auto
 # Pride Month by default
 rainbow_banner_month: 6
 
-# TOC - table of contents
-toc: true
-toc_max_depth: 2
+# # TOC - table of contents
+# toc:
+#   enable: true
+#   # Automatically add list number to toc
+#   number: true
+#   # If true, all word will placed on next lines if header width longer then sidebar width
+#   wrap: true
+#   # If true, all level of TOC in a post will be displayed, rather than the activated part of it
+#   expand_all: false
+#   # Maximum heading depth of generated TOC
+#   _max_depth: 2
 
 # scroll reveal (https://scrollrevealjs.org/) - animating elements as they enter/leave the viewport
 scroll_reveal: true
