@@ -47,6 +47,8 @@ toc_max_depth: 2
 
 # ====== Scroll Reveal ======
 scroll_reveal: true
+scroll_reveal_query: .scroll-reveal, .post-list-item, .card, .content p img, .content .block-large img
+scroll_reveal_disappear: false
 
 # ====== Search ======
 search: true

@@ -4,8 +4,8 @@
 
 # Site
 title: Kevin Chiu
-subtitle: ''
-description: ''
+subtitle: 'Stay hungry, stay foolish'
+description: 'Kevin Chiu is talking here.'
 keywords:
 author: Kevin Chiu
 language: en
@@ -109,3 +109,23 @@ deploy:
   type: git
   repo: https://github.com/kevinchiu923/kevinchiu923.github.io.git
   branch: main
+
+
+hero_exit_while_scrolling:
+  enabled: true
+  blur_filter: false
+
+builtin_components:
+  card: true
+  button: true
+  badge: true
+  utilities: true
+
+# smooth scroll powered by [darkroomengineering/lenis](https://github.com/darkroomengineering/lenis)
+smooth_scroll: true
+
+insertions:
+  head:
+    ending: ''
+  body:
+    ending: ''
