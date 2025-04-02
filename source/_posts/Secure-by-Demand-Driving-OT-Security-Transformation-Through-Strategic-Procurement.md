@@ -3,7 +3,11 @@ title: >-
   Secure by Demand: Driving OT Security Transformation Through Strategic Procurement
 date: 2025-03-26 22:00:00
 tags:
-toc: false
+  - English
+  - Industrial control system
+  - Cyber security
+categories:
+  - Knowledge base
 ---
 
 ![](Secure-by-Demand-Driving-OT-Security-Transformation-Through-Strategic-Procurement/cover_img.jpeg)

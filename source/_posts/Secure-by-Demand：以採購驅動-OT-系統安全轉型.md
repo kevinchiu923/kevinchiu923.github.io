@@ -3,7 +3,11 @@ title: >-
   Secure by Demand：以採購驅動 OT 系統安全轉型
 date: 2025-03-26 22:00:00
 tags:
-toc: false
+  - Traditional Chinese
+  - 工業控制系統
+  - 資訊安全
+categories:
+  - Knowledge base
 ---
 
 ![](Secure-by-Demand：以採購驅動-OT-系統安全轉型/cover_img.jpeg)
