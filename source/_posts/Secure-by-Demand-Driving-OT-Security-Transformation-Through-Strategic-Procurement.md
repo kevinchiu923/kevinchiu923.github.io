@@ -1,6 +1,6 @@
 ---
 title: >-
-  Secure-by-Demand-Driving-OT-Security-Transformation-Through-Strategic-Procurement
+  Secure by Demand：以採購驅動 OT 系統安全轉型
 date: 2025-03-26 00:00:00
 tags:
 ---
