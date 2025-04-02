@@ -11,7 +11,7 @@ nav:
     Projects: /projects
     About: /about
     GitHub: https://github.com/kevinchiu923
-    # CodePen: https://codepen.io/mrwillcom
+    LinkedIn: https://www.linkedin.com/in/yen-ming-kevin-chiu/
     # Patreon: https://www.patreon.com/MrWillCom
     # Mastodon: https://noc.social/@MrWillCom
     # Discord: https://discord.gg/UKuFDjcfY8
@@ -31,6 +31,7 @@ footer:
     # RSA CLI: https://github.com/MrWillCom/rsa-cli
   Me:
     GitHub: https://github.com/kevinchiu923
+    LinkedIn: https://www.linkedin.com/in/yen-ming-kevin-chiu/
 # footer_extra_description: [extra-description]
 
 # ====== License ======

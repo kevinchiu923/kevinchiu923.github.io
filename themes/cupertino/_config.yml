@@ -64,6 +64,7 @@ nav:
     About: /about
     # these will be automatically be an icon
     GitHub: https://github.com/kevinchiu923
+    LinkedIn: https://www.linkedin.com/in/yen-ming-kevin-chiu/
     # CodePen: https://codepen.io/mrwillcom
     # Patreon: https://www.patreon.com/MrWillCom
     # Mastodon: https://noc.social/@MrWillCom
@@ -100,6 +101,7 @@ footer:
     # Patreon: https://www.patreon.com/MrWillCom
     # Mastodon: https://noc.social/@MrWillCom
     # Discord: https://discord.gg/UKuFDjcfY8
+    LinkedIn: https://www.linkedin.com/in/yen-ming-kevin-chiu/
     Email: mailto:kevinchiu923@gmail.com
 
 # footer extra description
