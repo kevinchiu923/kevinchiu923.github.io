@@ -117,4 +117,10 @@ license_link: https://creativecommons.org/licenses/by-nc/4.0
 search: true
 search_path: search.json
 
-# REMEMBER TO EDIT THIS BEFORE DEPLOYING!!!
+# Enable or disable the RSS feed.
+# RSS feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0 # 最大文章數量
+  content: false # 是否顯示內文
