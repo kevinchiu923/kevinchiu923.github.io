@@ -34,7 +34,7 @@ toc: false
 
 8. **安全控制指令處理（Resilience Against Malicious Commands）**：具備辨識惡意或非預期指令的能力，避免被用於觸發故障或安全事件。
 
-9. **強化身份驗證（Strong Authentication）**：採用[MFA](https://en.wikipedia.org/wiki/Multi-factor_authentication)、多層權限管理，避免共用帳號與釣魚攻擊。
+9. **強化身份驗證（Strong Authentication）**：採用 [MFA](https://en.wikipedia.org/wiki/Multi-factor_authentication)、多層權限管理，避免共用帳號與釣魚攻擊。
 
 10. **威脅建模能力（Threat Modeling Capability）**：製造商需提供詳細威脅模型與對應防禦機制，協助買方風險評估。
 
