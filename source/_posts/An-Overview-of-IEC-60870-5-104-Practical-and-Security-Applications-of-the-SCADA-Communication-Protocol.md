@@ -4,7 +4,7 @@ title: >-
   SCADA Communication Protocol
 date: 2025-03-27 20:00:00
 tags:
-  - Traditional Chinese
+  - English
   - Industrial Control System
   - Cyber security
 categories:
