@@ -9,7 +9,7 @@ tags:
   - Cyber security
 categories:
   - Knowledge base
-cover_image: ''
+cover_image: 'https://kevinchiu923.github.io/post/An-Overview-of-IEC-60870-5-104-Practical-and-Security-Applications-of-the-SCADA-Communication-Protocol/cover_img.jpeg'
 ---
 
 ![](An-Overview-of-IEC-60870-5-104-Practical-and-Security-Applications-of-the-SCADA-Communication-Protocol/cover_img.jpeg)
