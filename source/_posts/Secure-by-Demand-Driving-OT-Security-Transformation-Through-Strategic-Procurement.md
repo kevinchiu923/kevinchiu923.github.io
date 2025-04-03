@@ -9,6 +9,7 @@ tags:
   - Cybersecurity Best Practices
 categories:
   - Knowledge base
+cover_image: 'https://kevinchiu923.github.io/post/Secure-by-Demand-Driving-OT-Security-Transformation-Through-Strategic-Procurement/cover_img.jpeg'
 ---
 
 ![](Secure-by-Demand-Driving-OT-Security-Transformation-Through-Strategic-Procurement/cover_img.jpeg)

@@ -9,6 +9,7 @@ tags:
   - 網路安全最佳實踐
 categories:
   - Knowledge base
+cover_image: 'https://kevinchiu923.github.io/post/Secure-by-Demand%EF%BC%9A%E4%BB%A5%E6%8E%A1%E8%B3%BC%E9%A9%85%E5%8B%95-OT-%E7%B3%BB%E7%B5%B1%E5%AE%89%E5%85%A8%E8%BD%89%E5%9E%8B/cover_img.jpeg'
 ---
 
 ![](Secure-by-Demand：以採購驅動-OT-系統安全轉型/cover_img.jpeg)
