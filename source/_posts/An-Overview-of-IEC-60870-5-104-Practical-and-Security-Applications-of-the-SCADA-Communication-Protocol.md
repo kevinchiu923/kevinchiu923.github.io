@@ -77,7 +77,7 @@ SCADA systems typically use a **Master-Slave architecture** [1] where **the cont
 
 After connection, the client initiates communication with the **StartDT** command. If the server is unresponsive for too long, the **TestFR** command is used to verify the connection.
 
-###### [1] Since 2020, the terms “Master” and “Slave” have come under scrutiny in the tech industry due to their historical association with slavery. Companies like Oracle and GitHub have advocated replacing them with alternatives like **Primary-Replica, Conductor-Member, or Primary-Secondary** to promote more inclusive language.However, as the **IEC standards** were defined before this shift and still reference these terms, we use them here strictly for consistency and clarity in reference to the original documentation.
+###### [1] Since 2020, the terms “Master” and “Slave” have come under scrutiny in the tech industry due to their historical association with slavery. Companies like Oracle and GitHub have advocated replacing them with alternatives like **Primary-Replica, Conductor-Member, or Primary-Secondary** to promote more inclusive language.<br>However, as the **IEC standards** were defined before this shift and still reference these terms, we use them here strictly for consistency and clarity in reference to the original documentation.
 
 ---
 
