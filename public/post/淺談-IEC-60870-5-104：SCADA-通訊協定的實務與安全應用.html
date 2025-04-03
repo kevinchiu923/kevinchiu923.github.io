@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head prefix="og: https://ogp.me/ns#">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  
+  <title>淺談 IEC 60870-5-104：SCADA 通訊協定的實務與安全應用 - Kevin Chiu</title>
+  
+    <link rel="shortcut icon" href="/%3Cpath-to-favicon%3E">
+  
+  
+    <link rel='manifest' href='&lt;path-to-manifest&gt;'>
+  
+
+  
+  
+  
+  <meta property="og:title" content="淺談 IEC 60870-5-104：SCADA 通訊協定的實務與安全應用 - Kevin Chiu" />
+  
+  <meta property="og:type" content="article" />
+  
+  <meta property="og:url" content="https://kevinchiu923.github.io/post/%E6%B7%BA%E8%AB%87-IEC-60870-5-104%EF%BC%9ASCADA-%E9%80%9A%E8%A8%8A%E5%8D%94%E5%AE%9A%E7%9A%84%E5%AF%A6%E5%8B%99%E8%88%87%E5%AE%89%E5%85%A8%E6%87%89%E7%94%A8.html" />
+  
+  <meta property="og:image" content="/favicon.png" />
+  
+  <meta property="og:article:published_time" content="2025-03-27T12:00:00.000Z" />
+  
+  <meta property="og:article:author" content="Kevin Chiu" />
+  
+  
+
+  
+<link rel="stylesheet" href="/css/var.css">
+
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+<link rel="stylesheet" href="/css/typography.css">
+
+  
+<link rel="stylesheet" href="/css/code-highlighting.css">
+
+  
+<link rel="stylesheet" href="/css/components.css">
+
+  
+<link rel="stylesheet" href="/css/nav.css">
+
+  
+<link rel="stylesheet" href="/css/paginator.css">
+
+  
+<link rel="stylesheet" href="/css/footer.css">
+
+  
+<link rel="stylesheet" href="/css/post-list.css">
+
+  
+  
+<link rel="stylesheet" href="/css/rainbow-banner.css">
+
+  
+  
+  
+<link rel="stylesheet" href="/css/toc.css">
+
+  
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/post.css">
+
+  
+  
+  
+  
+  
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+    <body
+        data-color-scheme="light/dark/auto"
+        data-uppercase-categories="true"
+        
+        data-rainbow-banner="true"
+        data-rainbow-banner-shown="auto"
+        data-rainbow-banner-month="6"
+        data-rainbow-banner-colors="#e50000,#ff8d00,#ffee00,#008121,#004cff,#760188"
+        
+        data-config-root="/"
+        
+        data-toc="true"
+        data-toc-max-depth="2"
+        
+        
+    >
+        <nav id="theme-nav">
+    <div class="inner">
+        <a class="title" href="/">Blog</a>
+        <div class="nav-arrow"></div>
+        <div class="nav-items">
+            <a class="nav-item nav-item-home" href="/">Home</a>
+            
+            
+            <a class="nav-item" href="/archives">Archives</a>
+            
+            
+            
+            <a class="nav-item" href="/friends">Friends</a>
+            
+            
+            
+            <a class="nav-item" href="/projects">Projects</a>
+            
+            
+            
+            <a class="nav-item" href="/about">About</a>
+            
+            
+            
+            <a class="nav-item nav-item-github nav-item-icon" href="https://github.com/kevinchiu923" target="_blank" aria-label="GitHub">&nbsp;</a>
+            
+            
+            
+            <a class="nav-item nav-item-linkedin nav-item-icon" href="https://www.linkedin.com/in/yen-ming-kevin-chiu/" target="_blank" aria-label="LinkedIn">&nbsp;</a>
+            
+            
+            
+            <a class="nav-item nav-item-search nav-item-icon" href="/search" target="_blank" aria-label="Search">&nbsp;</a>
+            
+            
+        </div>
+    </div>
+</nav>
+        
+<article class="post">
+    <div class="meta">
+        
+        <div class="categories text-uppercase">
+        
+            <a href="/categories/Knowledge-base/">Knowledge base</a>
+        
+        </div>
+        
+
+        
+        <div class="date" id="date">
+            <span>March</span>
+            <span>27,</span>
+            <span>2025</span>
+        </div>
+        
+
+        <h1 class="title">淺談 IEC 60870-5-104：SCADA 通訊協定的實務與安全應用</h1>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="content">
+        <p><img src="/%E6%B7%BA%E8%AB%87IEC-60870-5-104%EF%BC%9ASCADA-%E9%80%9A%E8%A8%8A%E5%8D%94%E5%AE%9A%E7%9A%84%E5%AF%A6%E5%8B%99%E8%88%87%E5%AE%89%E5%85%A8%E6%87%89%E7%94%A8/cover_img.jpeg"></p>
+<center>Source: https://www.dreamstime.com/</center>
+
+<h2 id="1-專有名詞說明"><a href="#1-專有名詞說明" class="headerlink" title="1. 專有名詞說明"></a>1. 專有名詞說明</h2><ul>
+<li><p><strong>遙測 → Telemetry</strong><br>  定義：是指從遠端設備或系統收集資料並傳回主系統或控制中心的技術。這些資料通常是感測器或監控裝置所收集的，例如溫度、壓力、位置等<br>  舉例：太空探測器將自身的速度、溫度、位置等資料傳回地球，這些就是「遙測」數據</p>
+</li>
+<li><p><strong>遙信 → Tele-signaling &#x2F; Remote Signaling</strong><br>  定義：指遠端設備或系統的狀態信號的傳送，主要是傳遞狀態或告警資訊（如開&#x2F;關、正常&#x2F;故障等），通常是離散型資料<br>  舉例：發電廠的控制中心收到某個變電站「開關已關閉」的狀態信號，這就是一種遙信</p>
+</li>
+<li><p><strong>遙控 → Telecontrol &#x2F; Remote Control</strong><br>  定義：指從遠端對設備進行控制或操作，例如遠端開關機、設定參數、啟動程式等<br>  舉例：遠端控制工廠機械啟動運轉、開啟空調等，這些都屬於遙控</p>
+</li>
+<li><p><strong>DSP → Digital signal processor (數位訊號處理器)</strong><br>  定義：是一種專用於數位訊號處理的微處理器，被廣泛應用於電信、音訊處理、數位圖像處理、雷達、聲納等領域，以及消費電子產品中</p>
+</li>
+<li><p><strong>RTU → Remote terminal unit (遠端遙控裝置)</strong><br>  定義：微控制處理器，主要做為裝置介面的電子裝置，將資料引入 SCADA，通過傳輸遙測資料 (Remote sensing data) 到主系統，並且使用主監控系統的資料控制所連接的裝置</p>
+</li>
+<li><p><strong>IED → Intelligent Electronic Device (智慧電子設備)</strong><br>  定義：具備資料處理能力與通訊功能的電子裝置，常應用於電力系統、工業控制系統（ICS）等場景中，用於監測、控制、保護與通訊。它不只是「感測器」或「繼電器」，而是具有 微處理器、邏輯判斷、遠端通訊能力的智慧設備。</p>
+</li>
+<li><p><strong>COT → Cause of Transmission (傳送原因)</strong><br>  定義： COT 是 IEC 60870-5 協定中 ASDU（應用服務資料單元）的一個重要欄位，用來說明這筆資料為什麼被傳送，也就是傳輸的「觸發原因」</p>
+</li>
+<li><p><strong>IOA → Information Object Address (資訊物件地址)</strong><br>  定義：用來標示該筆資料所屬的設備內部地址，也就是某個遙測點的「點號」。通常每個 RTU 或 IED 裝置裡會配置一張遙測點號表，IOA 就是用來定位這些點</p>
+</li>
+<li><p><strong>Frame → 訊框</strong><br>  定義：在工控通訊協定中，Frame 是一個用來封裝與傳輸資料的基本單位，就像是一個信封一樣，裡面包含了標頭 (header)、資料本體 (payload)、檢查碼 (CRC) 等資訊；其中標頭 (header) 主要由起始符 (Start of Frame, SOF) 、位址&#x2F;識別位、功能碼 (表示讀、寫等指令) 組成</p>
+</li>
+<li><p><strong>SCADA → Supervisory Control And Data Acquisition (監控與資料採集系統)</strong><br>  定義：是一種用於遠端監控與控制大型工業系統的架構，它允許操作人員從中控室監控現場設備的運作狀態，並能發送控制命令。SCADA 可收集、儲存、分析和顯示來自現場感測器和控制設備的資料</p>
+</li>
+</ul>
+<hr>
+<h2 id="2-何謂-IEC-60870-5-協定"><a href="#2-何謂-IEC-60870-5-協定" class="headerlink" title="2. 何謂 IEC 60870-5 協定"></a>2. 何謂 IEC 60870-5 協定</h2><p>IEC 60870 是一套是由 <a target="_blank" rel="noopener" href="https://www.iec.ch/homepage">國際電工委員會 (IEC)</a> 制定的國際通訊標準，旨在為在工業控制中心 (SCADA) 及遠端裝置 (如: RTU&#x2F;IED) 間進行可靠的資料傳輸。現今廣泛應用在電力系統、智慧電網的監控&#x2F;控制與工業自動化系統中。<br>IEC 60870-5 則是整個家族中的第五部份，旗下包含多達 13 個子標準，主要針對電力系統的遠端控制、遠端保護和相關通信制定了協議標準。</p>
+<p>其中最常見的兩個子標準是：</p>
+<ul>
+<li><strong>IEC 60870-5-101 (下稱 IEC 101)</strong>：使用傳統串列 (RS-232&#x2F;RS-485) 方式，適合本地端點對點傳輸應用。</li>
+<li><strong>IEC 60870-5-104 (下稱 IEC 104)</strong>：是針對現代網路環境 (如: TCP&#x2F;IP) 設計的版本，針對遠端通訊的傳輸層與應用層設計，可在乙太網、VPN 等廣域網路上進行資料傳輸。</li>
+</ul>
+<p>簡單來說，IEC 104 就是把 IEC 101 的資料格式「搬到網路上」，讓它能走在 IP 網路上，而且支援雙向持續連線，讓資料可以即時交換，不用像老系統只能等 SCADA 輪詢。</p>
+<hr>
+<h2 id="3-IEC-104-與-OSI-七層模型的對應"><a href="#3-IEC-104-與-OSI-七層模型的對應" class="headerlink" title="3. IEC 104 與 OSI 七層模型的對應"></a>3. IEC 104 與 OSI 七層模型的對應</h2><p>IEC 104 在網路通訊模型中，是應用層協定，透過 TCP 傳輸，預設使用 <strong>Port 2404</strong>。</p>
+<p>以下是它在 傳統網路 OSI 七層模型中的對應：</p>
+<ul>
+<li>應用層：IEC 104</li>
+<li>傳輸層：TCP</li>
+<li>網路層：IP</li>
+<li>資料鏈結層&#x2F;實體層：Ethernet</li>
+</ul>
+<p>在 SCADA 系統中採用的是 Master-Slave 模式 (<em>註1</em>)，主站 (控制中心) 通常是 <strong>Client (用戶端)</strong> ，現場的 RTU、IED 是 <strong>Server (伺服端)</strong> ，兩者透過 TCP 建立持久性連線 (Persistent Connection) ，並進行資料交換與控制指令下達。<br>當主站連線成功後，會送出 <strong>StartDT</strong> 指令開始資料傳送；若無動作太久，也會用 <strong>TestFR</strong> 做連線測試。</p>
+<h6 id="註1：自2020年起，美國科技界認為-Master-Slave-這樣的字眼可能反應了早期蓄奴制度而帶有潛在負面與歧視意涵，因而-Oracle、GitHub-等大廠倡議以-Source-Replica-、Conductor-Member-或是-Primary-Secondary-等新名詞取代之；但由於-IEC-相關文件制定時間較早，為讀者們參照方便，此文仍使用-Master-Slave-說明。-參考資料：MySQL-Terminology-Updates"><a href="#註1：自2020年起，美國科技界認為-Master-Slave-這樣的字眼可能反應了早期蓄奴制度而帶有潛在負面與歧視意涵，因而-Oracle、GitHub-等大廠倡議以-Source-Replica-、Conductor-Member-或是-Primary-Secondary-等新名詞取代之；但由於-IEC-相關文件制定時間較早，為讀者們參照方便，此文仍使用-Master-Slave-說明。-參考資料：MySQL-Terminology-Updates" class="headerlink" title="*註1：自2020年起，美國科技界認為 Master-Slave 這樣的字眼可能反應了早期蓄奴制度而帶有潛在負面與歧視意涵，因而 Oracle、GitHub 等大廠倡議以 Source-Replica 、Conductor-Member 或是 Primary-Secondary 等新名詞取代之；但由於 IEC 相關文件制定時間較早，為讀者們參照方便，此文仍使用 Master-Slave 說明。(參考資料：MySQL Terminology Updates)"></a>*註1：自2020年起，美國科技界認為 Master-Slave 這樣的字眼可能反應了早期蓄奴制度而帶有潛在負面與歧視意涵，因而 Oracle、GitHub 等大廠倡議以 Source-Replica 、Conductor-Member 或是 Primary-Secondary 等新名詞取代之；但由於 IEC 相關文件制定時間較早，為讀者們參照方便，此文仍使用 Master-Slave 說明。(參考資料：<a target="_blank" rel="noopener" href="https://dev.mysql.com/blog-archive/mysql-terminology-updates/">MySQL Terminology Updates</a>)</h6><hr>
+<h2 id="4-通訊格式與資料結構解說"><a href="#4-通訊格式與資料結構解說" class="headerlink" title="4. 通訊格式與資料結構解說"></a>4. 通訊格式與資料結構解說</h2><p>IEC 104 的資料單元叫做 <strong>ASDU (Application Service Data Unit)</strong> ，是主要的資料封裝格式。</p>
+<p>每個 ASDU 包含：</p>
+<ul>
+<li><strong>類型 ID (Type ID)</strong> ：表示這是什麼資料 (例如遙測、遙信、遙控)</li>
+<li><strong>傳送原因 (COT)</strong> ：表示為什麼送這筆資料 (定時、變化、指令、測試等)</li>
+<li><strong>公共地址與資訊物件地址 (IOA)</strong> ：標示資料屬於哪個裝置、哪一筆點位</li>
+<li><strong>資料內容</strong>：實際傳輸的值 (如 ON&#x2F;OFF、電壓數值)</li>
+</ul>
+<p>IEC 104 使用三種 Frame 類型：</p>
+<ol>
+<li><strong>I-frame</strong>：攜帶實際資料</li>
+<li><strong>S-frame</strong>：確認對方資料已收到</li>
+<li><strong>U-frame</strong>：連線管理指令，如 StartDT、StopDT、TestFR</li>
+</ol>
+<p>這些報文 (message) 內含控制編號與確認編號，確保資料正確送達，並支援流量控制與錯誤偵測。</p>
+<hr>
+<h2 id="5-實際應用案例：如何與-SCADA-整合"><a href="#5-實際應用案例：如何與-SCADA-整合" class="headerlink" title="5. 實際應用案例：如何與 SCADA 整合"></a>5. 實際應用案例：如何與 SCADA 整合</h2><p>在現代 SCADA 系統中，IEC 104 是非常常見的通訊協定。<br>舉例來說：</p>
+<ul>
+<li><strong>西門子 (Siemens)</strong> 的 RTU 裝置與 WinCC SCADA 系統可以透過 IEC 104 傳送資料。</li>
+<li><strong>施耐德電機 (Schneider Electric)</strong> 的 ClearSCADA (Geo SCADA) 也支援 IEC 104。</li>
+<li><strong>艾波比 (ABB)</strong> 的 MicroSCADA 及 RTU560 裝置內建 IEC 104 通訊模組。</li>
+</ul>
+<p>這些裝置通常會與 IED (如：智慧電表、保護裝置) 回傳的遙測訊息串接，例如：</p>
+<ul>
+<li>電壓&#x2F;電流變化</li>
+<li>保護跳脫事件</li>
+<li>遙控指令執行成功與否</li>
+</ul>
+<p>SCADA 系統會設定對應的 Type ID、COT、IOA 等參數，來對應每一筆資料。<br>在一些場景下，若現場設備只支援 IEC 101 (串列通訊) ，可使用 <strong>協定轉換器</strong> 或 <strong>閘道器</strong> (如：研華生產的轉換器 <a target="_blank" rel="noopener" href="https://www.advantech.com/zh-tw/products/ac0bd5cd-093a-4f88-87f5-13edc68a5616/esrp-pcs-icr3231/mod_803b3db4-bd02-472c-8ad3-624aaaab2433">ESRP-PCS-ICR3231</a> 及閘道器 <a target="_blank" rel="noopener" href="https://www.advantech.com/zh-tw/products/7332cf9e-bf70-4a79-b0b6-fd8a2182cd72/ecu-1051/mod_0ea5f440-e270-436f-afa3-077df3acce5d">ECU-1051</a>) 將其轉成 IEC 104 接入乙太網架構，實現舊系統升級。</p>
+<hr>
+<h2 id="6-資安挑戰與-IEC-62351-的保護機制"><a href="#6-資安挑戰與-IEC-62351-的保護機制" class="headerlink" title="6. 資安挑戰與 IEC 62351 的保護機制"></a>6. 資安挑戰與 IEC 62351 的保護機制</h2><p>IEC 104 初始設計時並未考慮現代網路威脅，因此面臨以下問題：</p>
+<ul>
+<li>資料採用明文傳輸，容易有遭竊聽的風險</li>
+<li>缺乏身份驗證機制，攻擊者可偽裝成合法主站發送指令</li>
+<li>沒有加密與完整性驗證，易遭中間人攻擊</li>
+</ul>
+<p>為了解決這些問題，IEC 推出了 <a target="_blank" rel="noopener" href="https://www.iec.ch/blog/cyber-security-understanding-iec-62351"><strong>IEC 62351</strong> 系列標準</a>，加強電力通訊方面的資安保護：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://webstore.iec.ch/en/publication/68410"><strong>IEC 62351-3</strong></a>：建議在 TCP 上使用 TLS (類似 HTTPS) 來加密資料</li>
+<li><a target="_blank" rel="noopener" href="https://webstore.iec.ch/en/publication/65511"><strong>IEC 62351-5</strong></a>：對 IEC 104 應用層新增簽章與序號保護，避免重放攻擊 (replay attack) 與偽造</li>
+<li><a target="_blank" rel="noopener" href="https://webstore.iec.ch/en/publication/61822"><strong>IEC 62351-8</strong></a> ＆ <a target="_blank" rel="noopener" href="https://webstore.iec.ch/en/publication/66864">IEC 62351-9</a>**：定義了裝置驗證和金鑰管理辦法</li>
+</ul>
+<p>若設備不支援這些功能，則可改用 VPN 或閘道器進行加密傳輸或封包轉發。</p>
+<hr>
+<h2 id="7-實務建議：如何部署安全又穩定的系統"><a href="#7-實務建議：如何部署安全又穩定的系統" class="headerlink" title="7. 實務建議：如何部署安全又穩定的系統"></a>7. 實務建議：如何部署安全又穩定的系統</h2><p>即使已導入 IEC 62351，仍建議採用以下部署建議：</p>
+<ol>
+<li><strong>網路區隔</strong>：SCADA、RTU 等工控網路要與一般企業網路隔離。</li>
+<li><strong>防火牆控制埠存取</strong>：只允許授權的 IP 連接 Port 2404 。</li>
+<li><strong>入侵偵測系統 (IDS)</strong> ：即時監測異常 IEC 104 封包與指令行為。</li>
+<li><strong>安全閘道器</strong>：限制只能傳送特定 IOA&#x2F;Type ID 的資料與指令。</li>
+<li><strong>VPN 加密傳輸</strong>：遠端存取建議透過加密通道保護資料。</li>
+<li><strong>定期更新設備韌體</strong>：修補既有已知漏洞。</li>
+</ol>
+<p>上述策略屬於縱深防禦，能大幅降低攻擊成功的機率。</p>
+
+    </div>
+
+    
+    <div class="about">
+        <h1>About this Post</h1>
+        <div class="details">
+            <p>This post is written by Kevin Chiu, licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.</p>
+        </div>
+        
+        <p class="tags">
+            
+            <i class="icon"></i>
+            <a href="/tags/Traditional-Chinese/" class="tag">#Traditional Chinese</a><a href="/tags/工業控制系統/" class="tag">#工業控制系統</a><a href="/tags/資訊安全/" class="tag">#資訊安全</a>
+        </p>
+        
+    </div>
+    
+
+    <div class="container post-prev-next">
+        <a class="next"></a>
+        
+        <a href="/post/Secure-by-Demand-Driving-OT-Security-Transformation-Through-Strategic-Procurement.html" class="prev">
+            <div>
+                <div class="text">
+                    <p class="label">Previous</p>
+                    <h3 class="title">Secure by Demand: Driving OT Security Transformation Through Strategic Procurement</>
+                </div>
+            </div>
+        </a>
+        
+    </div>
+
+    
+        
+        
+    
+</article>
+
+        <footer>
+    <div class="inner">
+        <div class="links">
+            
+            <div class="group">
+                <h2 class="title">Blog</h2>
+                
+                <a href="/" class="item">Blog</a>
+                
+                <a href="/archives" class="item">Archives</a>
+                
+                <a href="/tags" class="item">Tags</a>
+                
+                <a href="/categories" class="item">Categories</a>
+                
+                <a href="/search" class="item">Search</a>
+                
+                <a href="/friends" class="item">Friends</a>
+                
+                <a href="/projects" class="item">Projects</a>
+                
+                <a href="/resume" class="item">Resume</a>
+                
+                <a href="/about" class="item">About</a>
+                
+                <a href="/atom.xml" class="item">RSS</a>
+                
+            </div>
+            
+            <div class="group">
+                <h2 class="title">Projects</h2>
+                
+            </div>
+            
+            <div class="group">
+                <h2 class="title">Me</h2>
+                
+                <a target="_blank" rel="noopener" href="https://github.com/kevinchiu923" class="item">GitHub</a>
+                
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/yen-ming-kevin-chiu/" class="item">LinkedIn</a>
+                
+                <a href="mailto:kevinchiu923@gmail.com" class="item">Email</a>
+                
+            </div>
+            
+        </div>
+        <span>&copy; 2025 Kevin Chiu<br>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> </span>
+        
+        
+            <br>
+            <div class="color-scheme-toggle" role="radiogroup" id="theme-color-scheme-toggle">
+                <label>
+                    <input type="radio" value="light">
+                    <span>Light</span>
+                </label>
+                <label>
+                    <input type="radio" value="dark">
+                    <span>Dark</span>
+                </label>
+                <label>
+                    <input type="radio" value="auto">
+                    <span>Auto</span>
+                </label>
+            </div>
+        
+    </div>
+</footer>
+
+
+        
+<script src="/js/main.js"></script>
+
+        
+        
+        
+
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            window.addEventListener('load', () => {
+                ScrollReveal({ delay: 250, reset: true, easing: 'cubic-bezier(0, 0, 0, 1)' })
+                ScrollReveal().reveal('.post-list-item .cover-img img')
+                ScrollReveal().reveal('.post-list-item, .card, .content p img, .content .block-large img', { distance: '60px', origin: 'bottom', duration: 800 })
+            })
+        </script>
+        
+    </body>
+</html>
