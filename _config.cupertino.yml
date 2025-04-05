@@ -4,7 +4,7 @@ manifest: <path-to-manifest>
 
 # ====== Navigation ======
 nav:
-  title: Blog
+  title: Kevin's Insight
   items:
     Archives: /archives
     Friends: /friends
