@@ -67,7 +67,7 @@ nav:
   items:
     # these items will display as a link
     Archives: /archives
-    Friends: /friends
+    Friends: /Friends
     Projects: /projects
     About: /about
     # these will be automatically be an icon
@@ -89,7 +89,7 @@ footer:
     Tags: /tags
     Categories: /categories
     Search: /search
-    Friends: /friends
+    Friends: /Friends
     Projects: /projects
     Resume: /resume
     About: /about
