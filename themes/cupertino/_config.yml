@@ -1,7 +1,7 @@
 # REMEMBER TO EDIT THIS BEFORE DEPLOYING!!!
 
 # the path to your blog's icon:
-favicon: /source/icon_img/Kevin\'s_insight_logo.jpg
+favicon: /source/icon_img/blog_browser_logo.jpg
 
 # the path to manifest.json
 manifest: /manifest.json
