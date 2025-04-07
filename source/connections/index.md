@@ -1,7 +1,7 @@
 ---
-title: Friends
-layout: friends
-friends:
+title: Connections
+layout: connections
+connections:
   - name: Dr. Awesome Doge
     link: https://doge.tg/
     avatar: https://doge.tg/assets/img/prof_pic-480.webp

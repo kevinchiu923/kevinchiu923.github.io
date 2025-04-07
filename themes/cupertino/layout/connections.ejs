@@ -12,10 +12,10 @@
 
 <body class="dark">
     <main class="container">
-        <h2 class="post-title">Friends</h2>
-        <% if (page.friends && page.friends.length) { %>
+        <h2 class="post-title">Connections</h2>
+        <% if (page.connections && page.connections.length) { %>
             <div class="friend-cards">
-                <% page.friends.forEach(friend=> { %>
+                <% page.connections.forEach(friend=> { %>
                     <div class="friend-card">
                         <img class="friend-avatar" src="<%= friend.avatar %>" alt="<%= friend.name %>'s avatar">
                         <div class="friend-name">
@@ -29,7 +29,7 @@
                     <% }) %>
             </div>
             <% } else { %>
-                <p>No friends added yet!</p>
+                <p>No connections added yet!</p>
                 <% } %>
     </main>
 
