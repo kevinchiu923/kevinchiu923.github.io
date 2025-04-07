@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   
-  <title>Archives: 2025/4 - Kevin Chiu</title>
+  <title>Friends - Kevin Chiu</title>
   
     <link rel="shortcut icon" href="/icon_img/blog_browser_logo.jpg">
   
@@ -16,11 +16,11 @@
   
   
   
-  <meta property="og:title" content="Archives: 2025/4 - Kevin Chiu" />
+  <meta property="og:title" content="Friends - Kevin Chiu" />
   
   <meta property="og:type" content="website" />
   
-  <meta property="og:url" content="https://kevinchiu923.github.io/archives/2025/04/index.html" />
+  <meta property="og:url" content="https://kevinchiu923.github.io/friends/index.html" />
   
   <meta property="og:image" content="/favicon.png" />
   
@@ -72,10 +72,6 @@
   
   
   
-<link rel="stylesheet" href="/css/archive.css">
-
-  
-  
   
   
 
@@ -109,7 +105,7 @@
             
             
             
-            <a class="nav-item" href="/Friends">Friends</a>
+            <a class="nav-item" href="/friends">Friends</a>
             
             
             
@@ -135,44 +131,161 @@
         </div>
     </div>
 </nav>
-        <div class="container">
-    <div class="meta">
-        <div class="type">
-            
-            
-        </div>
+        <!DOCTYPE html>
+<html lang="en">
 
-        <h2 class="title">Archives</h2>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Friends - Kevin Chiu
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+<link rel="alternate" href="/atom.xml" title="Kevin Chiu" type="application/atom+xml">
+</head>
 
-    <div class="divider"></div>
-
-    <div class="post-list archives">
+<body class="dark">
+    <main class="container">
+        <h2 class="post-title">Friends</h2>
         
-        <article class="post-list-item">
-            <a href="/post/Friends.html">
+            <div class="friend-cards">
                 
-                <div class="content">
-                    
-                    <div class="title">
-                        Friends
+                    <div class="friend-card">
+                        <img class="friend-avatar" src="https://doge.tg/assets/img/prof_pic-480.webp" alt="Dr. Awesome Doge's avatar">
+                        <div class="friend-name">
+                            Dr. Awesome Doge
+                        </div>
+                        <div class="friend-desc">
+                            TONX Co-founder
+                        </div>
+                        <a class="friend-link" href="https://doge.tg/" target="_blank">Visit</a>
                     </div>
                     
-                    
-                    <div class="time">
-                        <span>April</span>
-                        <span>&nbsp;6,&nbsp;</span>
-                        <span>2025</span>
+                    <div class="friend-card">
+                        <img class="friend-avatar" src="https://avatars.githubusercontent.com/u/49090977?s=200&amp;v=4" alt="Cypherpunks Taiwan's avatar">
+                        <div class="friend-name">
+                            Cypherpunks Taiwan
+                        </div>
+                        <div class="friend-desc">
+                            Make Privicy Great Again!
+                        </div>
+                        <a class="friend-link" href="https://cypherpunks-core.github.io/markdown/about/" target="_blank">Visit</a>
                     </div>
                     
-                </div>
-            </a>
-        </article>
-        
-    </div>
+            </div>
+            
+    </main>
 
-    
-</div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025
+                    Kevin Chiu. Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>.</p>
+        </div>
+    </footer>
+
+    <style>
+        body {
+            /* background: #000; */
+            /* color: #fff; */
+            font-family: sans-serif;
+        }
+
+        .navbar {
+            background: #111;
+            padding: 1rem 0;
+        }
+
+        .site-title {
+            /* color: #fff; */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .post-title {
+            margin-top: 2rem;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .friend-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            justify-content: center;
+        }
+
+        .friend-card {
+            /* background: #1e1e1e; */
+            border-radius: 16px;
+            padding: 1rem;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .friend-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        body[data-theme='dark'] .friend-name,
+        body[data-theme='dark'] .friend-desc {
+            color: #fff;
+        }
+
+        body[data-theme='light'] .friend-name,
+        body[data-theme='light'] .friend-desc {
+            color: #000;
+        }
+
+        .friend-name {
+            margin-top: 0.8rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .friend-desc {
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+        }
+
+        .friend-link {
+            background: transparent;
+            border: 2px solid #007aff;
+            color: #007aff;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .friend-link:hover {
+            text-decoration: none;
+        }
+
+        .footer {
+            /* background: #111; */
+            padding: 1rem 0;
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</body>
+
+</html>
         <footer>
     <div class="inner">
         <div class="links">
@@ -190,7 +303,7 @@
                 
                 <a href="/search" class="item">Search</a>
                 
-                <a href="/Friends" class="item">Friends</a>
+                <a href="/friends" class="item">Friends</a>
                 
                 <a href="/projects" class="item">Projects</a>
                 

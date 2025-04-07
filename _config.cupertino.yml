@@ -7,7 +7,7 @@ nav:
   title: Kevin's Insight
   items:
     Archives: /archives
-    Friends: /Friends
+    Friends: /friends
     Projects: /projects
     About: /about
     GitHub: https://github.com/kevinchiu923
@@ -45,6 +45,10 @@ show_color_scheme_toggle: true
 # ====== TOC ======
 toc: true
 toc_max_depth: 2
+# toc:
+#   enable: true
+#   page_types:
+#     - post
 
 # ====== Scroll Reveal ======
 scroll_reveal: true
