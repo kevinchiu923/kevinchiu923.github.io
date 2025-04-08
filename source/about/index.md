@@ -9,5 +9,5 @@ About:
   - name: Cypherpunks Taiwan
     link: https://cypherpunks-core.github.io/markdown/about/
     avatar: https://avatars.githubusercontent.com/u/49090977?s=200&v=4
-    description: Make Privicy Great Again!
+    description: Make Privacy Great Again!
 ---
