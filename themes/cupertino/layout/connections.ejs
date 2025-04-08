@@ -1,145 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>
-        <%= page.title %> - <%= config.title %>
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="<%= config.root %>css/style.css">
-</head>
-
-<body class="dark">
-    <main class="container">
-        <h2 class="post-title">Connections</h2>
-        <% if (page.connections && page.connections.length) { %>
-            <div class="friend-cards">
-                <% page.connections.forEach(friend=> { %>
-                    <div class="friend-card">
-                        <img class="friend-avatar" src="<%= friend.avatar %>" alt="<%= friend.name %>'s avatar">
-                        <div class="friend-name">
-                            <%= friend.name %>
-                        </div>
-                        <div class="friend-desc">
-                            <%= friend.description %>
-                        </div>
-                        <a class="friend-link" href="<%= friend.link %>" target="_blank">Visit</a>
-                    </div>
-                    <% }) %>
-            </div>
-            <% } else { %>
-                <p>No connections added yet!</p>
-                <% } %>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; <%= new Date().getFullYear() %>
-                    <%= config.author %>. Powered by <a href="https://hexo.io">Hexo</a>.</p>
+<div class="container">
+    <div class="meta">
+        <div class="type">
+            <%= is_category() ? __('category') : '' %>
+                <%= is_tag() ? __('tag') : '' %>
         </div>
-    </footer>
 
-    <style>
-        body {
-            /* background: #000; */
-            /* color: #fff; */
-            font-family: sans-serif;
-        }
+        <h2 class="title<%= theme.capitalize_tags && is_tag() ? ' text-capitalize' : '' %>">
+            <%= is_category() ? page.category : '' %>
+                <%= is_tag() ? (theme.hashtag_prefix_before_tags ? '#' : '' ) + page.tag : '' %>
+                    <%= is_archive() ? __('archives') : '' %>
+        </h2>
+    </div>
 
-        .navbar {
-            background: #111;
-            padding: 1rem 0;
-        }
+    <div class="divider"></div>
 
-        .site-title {
-            /* color: #fff; */
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.4rem;
-        }
+    <% if (page.connections && page.connections.length) { %>
+        <div class="connection-cards">
+            <% page.connections.forEach(connection=> { %>
+                <div class="connection-card">
+                    <img class="connection-avatar" src="<%= connection.avatar %>" alt="<%= connection.name %>'s avatar">
+                    <div class="connection-name">
+                        <%= connection.name %>
+                    </div>
+                    <div class="connection-desc">
+                        <%= connection.description %>
+                    </div>
+                    <a class="connection-link" href="<%= connection.link %>" target="_blank">Visit</a>
+                </div>
+                <% }) %>
+        </div>
+        <!-- <% } else { %>
+            <p>No connections added yet!</p>
+            <% } %> -->
+            <%- partial('_partial/paginator') %>
+</div>
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
 
-        .post-title {
-            margin-top: 2rem;
-            font-size: 2rem;
-            font-weight: bold;
-        }
+<style>
+    body {
+        /* background: #000; */
+        /* color: #fff; */
+        font-family: sans-serif;
+    }
 
-        .friend-cards {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            margin-top: 2rem;
-            justify-content: center;
-        }
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
 
-        .friend-card {
-            /* background: #1e1e1e; */
-            border-radius: 16px;
-            padding: 1rem;
-            width: 220px;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
+    .connection-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        justify-content: center;
+    }
 
-        .friend-avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+    .connection-card {
+        /* background: #1e1e1e; */
+        border-radius: 16px;
+        padding: 1rem;
+        width: 220px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
 
-        body[data-theme='dark'] .friend-name,
-        body[data-theme='dark'] .friend-desc {
-            color: #fff;
-        }
+    .connection-avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 
-        body[data-theme='light'] .friend-name,
-        body[data-theme='light'] .friend-desc {
-            color: #000;
-        }
+    body[data-theme='dark'] .connection-name,
+    body[data-theme='dark'] .connection-desc {
+        color: #fff;
+    }
 
-        .friend-name {
-            margin-top: 0.8rem;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
+    body[data-theme='light'] .connection-name,
+    body[data-theme='light'] .connection-desc {
+        color: #000;
+    }
 
-        .friend-desc {
-            font-size: 0.9rem;
-            margin: 0.5rem 0;
-        }
+    .connection-name {
+        margin-top: 0.8rem;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
 
-        .friend-link {
-            background: transparent;
-            border: 2px solid #007aff;
-            color: #007aff;
-            padding: 0.4rem 0.8rem;
-            border-radius: 8px;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
+    .connection-desc {
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+    }
 
-        .friend-link:hover {
-            text-decoration: none;
-        }
+    .connection-link {
+        background: transparent;
+        border: 2px solid #007aff;
+        color: #007aff;
+        padding: 0.4rem 0.8rem;
+        border-radius: 8px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
 
-        .footer {
-            /* background: #111; */
-            padding: 1rem 0;
-            text-align: center;
-            margin-top: 2rem;
-            font-size: 0.9rem;
-        }
-    </style>
-</body>
-
-</html>
+    .connection-link:hover {
+        text-decoration: none;
+    }
+</style>
