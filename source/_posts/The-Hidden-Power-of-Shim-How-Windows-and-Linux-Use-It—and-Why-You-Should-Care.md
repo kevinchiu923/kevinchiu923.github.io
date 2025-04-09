@@ -114,7 +114,7 @@ This trust chain consists of four critical components in sequence: Firmware, Shi
 
 Together, these components form a complete and auditable trust path, ensuring that only validated binaries are executed during system boot.
 
-![Three-stage Trust Chain](https://kevinchiu923.github.io/post/The-Hidden-Power-of-Shim-How-Windows-and-Linux-Use-It—and-Why-You-Should-Care/Three-stage-Trust-Chain.jpeg)
+![](https://kevinchiu923.github.io/post/The-Hidden-Power-of-Shim-How-Windows-and-Linux-Use-It—and-Why-You-Should-Care/Three-stage-Trust-Chain.jpeg)
 
 **Detailed Flow:**
 **Step 1: Firmware → Shim (Signed by Microsoft)**
