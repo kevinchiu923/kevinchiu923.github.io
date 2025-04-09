@@ -1,6 +1,6 @@
 ---
 title: 深入解析 Shim：Windows 相容性修正與 Linux Secure Boot 信任鏈核心
-date: 2025-04-10 20:10:00
+date: 2025-04-10 20:00:00
 tags:
   - Traditional Chinese
   - Windows

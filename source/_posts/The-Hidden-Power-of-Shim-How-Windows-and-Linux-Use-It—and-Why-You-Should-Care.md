@@ -1,6 +1,6 @@
 ---
 title: 'The Hidden Power of Shim: How Windows and Linux Use It—and Why You Should Care'
-date: 2025-04-10 20:00:00
+date: 2025-04-10 20:10:00
 tags:
   - English
   - Windows
