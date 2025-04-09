@@ -241,7 +241,7 @@
 <h3 id="2-Linux-為什麼需要-Shim？"><a href="#2-Linux-為什麼需要-Shim？" class="headerlink" title="2. Linux 為什麼需要 Shim？"></a>2. Linux 為什麼需要 Shim？</h3><p>Linux 發行版透過 shim 避免每次 kernel 或 bootloader 更新都需向微軟簽章。<br>Shim 自身由微軟簽署，而它內嵌的發行版公鑰可用來驗證 GRUB 與 Linux kernel。</p>
 <h3 id="3-運作流程：Shim-的三段式信任鏈-Three-stage-Trust-Chain"><a href="#3-運作流程：Shim-的三段式信任鏈-Three-stage-Trust-Chain" class="headerlink" title="3. 運作流程：Shim 的三段式信任鏈 (Three-stage Trust Chain)"></a>3. 運作流程：Shim 的三段式信任鏈 (Three-stage Trust Chain)</h3><p>三段式信任鏈是 Linux 在 UEFI Secure Boot 環境中，用以確保開機流程安全與完整性的核心架構。<br>其主要目的，是確保從 UEFI 韌體啟動開始，經由 GRUB，到最終載入 Linux 核心的每一個階段裡所執行的元件皆為經簽章驗證、未遭竄改可信的程式碼。</p>
 <p>整體信任鏈依序包含 Firmware、Shim、GRUB 與 Kernel 四個關鍵元件，其中每一階段的簽章與驗證機制，分別由不同單位負責：<br>Firmware 通常由硬體廠商提供，Shim 則由 Linux 發行版開發並交由微軟簽章，GRUB 和 Kernel 則由發行版簽署，並透過 Shim 或 MOK 機制進行驗證，共同構成一條完整且可追溯的信任路徑。</p>
-<p><img src="https://kevinchiu923.github.io/post/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90-Shim%EF%BC%9AWindows-%E7%9B%B8%E5%AE%B9%E6%80%A7%E4%BF%AE%E6%AD%A3%E8%88%87-Linux-Secure-Boot-%E4%BF%A1%E4%BB%BB%E9%8F%88%E6%A0%B8%E5%BF%83/Three-stage-Trust-Chain.jpeg" alt="Three-stage Trust Chain"><span class="image-caption">Three-stage Trust Chain</span></p>
+<p><img src="https://kevinchiu923.github.io/post/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90-Shim%EF%BC%9AWindows-%E7%9B%B8%E5%AE%B9%E6%80%A7%E4%BF%AE%E6%AD%A3%E8%88%87-Linux-Secure-Boot-%E4%BF%A1%E4%BB%BB%E9%8F%88%E6%A0%B8%E5%BF%83/Three-stage-Trust-Chain.jpeg"></p>
 <p>詳細流程如下：</p>
 <p><strong>Step 1：Firmware → shim(由微軟簽署)</strong></p>
 <table>

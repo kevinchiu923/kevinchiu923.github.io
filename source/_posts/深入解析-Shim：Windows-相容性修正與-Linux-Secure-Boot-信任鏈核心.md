@@ -108,7 +108,7 @@ Shim 自身由微軟簽署，而它內嵌的發行版公鑰可用來驗證 GRUB 
 整體信任鏈依序包含 Firmware、Shim、GRUB 與 Kernel 四個關鍵元件，其中每一階段的簽章與驗證機制，分別由不同單位負責：
 Firmware 通常由硬體廠商提供，Shim 則由 Linux 發行版開發並交由微軟簽章，GRUB 和 Kernel 則由發行版簽署，並透過 Shim 或 MOK 機制進行驗證，共同構成一條完整且可追溯的信任路徑。
 
-![Three-stage Trust Chain](https://kevinchiu923.github.io/post/深入解析-Shim：Windows-相容性修正與-Linux-Secure-Boot-信任鏈核心/Three-stage-Trust-Chain.jpeg)
+![](https://kevinchiu923.github.io/post/深入解析-Shim：Windows-相容性修正與-Linux-Secure-Boot-信任鏈核心/Three-stage-Trust-Chain.jpeg)
 
 詳細流程如下：
 
