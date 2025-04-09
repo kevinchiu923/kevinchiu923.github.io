@@ -2,6 +2,13 @@
 title: 'The Hidden Power of Shim: How Windows and Linux Use It—and Why You Should Care'
 date: 2025-04-10 20:00:00
 tags:
+  - English
+  - Windows
+  - Linux
+  - Cyber security
+categories:
+  - Knowledge base
+cover_image: 'https://kevinchiu923.github.io/post/The-Hidden-Power-of-Shim-How-Windows-and-Linux-Use-It—and-Why-You-Should-Care/en_cover_img.jpeg'
 ---
 Shim is a critical middleware component used in operating systems. Through API interception or signature verification, it provides both application compatibility and Secure Boot integrity. However, it can also serve as an attack surface for threat actors. This article focuses on the design, implementation, potential security risks, and defense strategies related to Shim.
 
