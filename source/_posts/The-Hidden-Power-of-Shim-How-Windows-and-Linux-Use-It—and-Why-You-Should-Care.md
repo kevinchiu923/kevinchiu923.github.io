@@ -8,7 +8,7 @@ tags:
   - Cyber security
 categories:
   - Knowledge base
-cover_image: 'https://kevinchiu923.github.io/post/The-Hidden-Power-of-Shim-How-Windows-and-Linux-Use-It—and-Why-You-Should-Care/en_cover_img.jpeg'
+cover_image: 'https://kevinchiu923.github.io/post/The-Hidden-Power-of-Shim-How-Windows-and-Linux-Use-It—and-Why-You-Should-Care/en_cover_img.png'
 ---
 Shim is a critical middleware component used in operating systems. Through API interception or signature verification, it provides both application compatibility and Secure Boot integrity. However, it can also serve as an attack surface for threat actors. This article focuses on the design, implementation, potential security risks, and defense strategies related to Shim.
 
@@ -114,7 +114,7 @@ This trust chain consists of four critical components in sequence: Firmware, Shi
 
 Together, these components form a complete and auditable trust path, ensuring that only validated binaries are executed during system boot.
 
-![Three-stage Trust Chain](https://hackmd.io/_uploads/r1XdmME01l.jpg)
+![Three-stage Trust Chain](https://kevinchiu923.github.io/post/The-Hidden-Power-of-Shim-How-Windows-and-Linux-Use-It—and-Why-You-Should-Care/Three-stage-Trust-Chain.jpeg)
 
 **Detailed Flow:**
 **Step 1: Firmware → Shim (Signed by Microsoft)**
