@@ -8,7 +8,7 @@ tags:
   - 資訊安全
 categories:
   - Knowledge base
-cover_image: 'https://kevinchiu923.github.io/post/The-Hidden-Power-of-Shim-How-Windows-and-Linux-Use-It—and-Why-You-Should-Care/zhtw_cover_img.png'
+cover_image: 'https://kevinchiu923.github.io/post/深入解析-Shim：Windows-相容性修正與-Linux-Secure-Boot-信任鏈核心/zhtw_cover_img.png'
 ---
 Shim 是一種關鍵的系統中介技術，透過 API 攔截或簽章驗證，提供應用程式相容性與Secure Boot 安全性，但同時也可能成為資安攻擊的切入點。
 本文將著重介紹 Shim 的運作原理、實作方式、潛在風險與對應防護策略。
