@@ -102,7 +102,7 @@ UEFI Secure Boot ensures only signed binaries are executed during boot. Firmware
 Shim allows distributions to sign and manage their own GRUB/kernel updates without requiring direct Microsoft signature for every update.
 Shim itself is Microsoft-signed, while embedded public keys inside shim verify GRUB and Linux kernel.
 
-## 3. Boot Process Flow: The Shim Three-Stage Trust Chain
+### 3. Boot Process Flow: The Shim Three-Stage Trust Chain
 The three-stage trust chain is a core architecture used in Linux systems under UEFI Secure Boot to ensure a secure and tamper-resistant boot process.
 
 Its primary goal is to guarantee that every executable component involved in the boot sequence—from UEFI firmware to GRUB and ultimately to the Linux kernel—is cryptographically verified and trusted, ensuring integrity and authenticity throughout the chain.
