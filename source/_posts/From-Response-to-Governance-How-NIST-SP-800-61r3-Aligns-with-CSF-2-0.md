@@ -13,6 +13,7 @@ cover_image: 'https://kevinchiu923.github.io/post/From-Response-to-Governance-Ho
 
 This article explores how organizations can translate the six core functions of CSF 2.0 into actionable, governance-driven incident response strategies — from the perspective of a Chief Information Security Officer (CISO) or senior cybersecurity executive.
 
+
 ## Introduction
 [NIST SP 800-61r3](https://doi.org/10.6028/NIST.SP.800-61r3), officially titled:
 **Incident Response Recommendations and Considerations for Cybersecurity Risk Management: A CSF 2.0 Community Profile**,
@@ -27,6 +28,8 @@ Unlike previous versions that focused primarily on technical procedures for hand
 
 In addition, the NIST 800-series publications represent one of NIST’s most comprehensive sets of guidance for information security, covering a wide range of topics including risk assessment, access control, and privacy protection. SP 800-61r3, in particular, focuses on the specific domain of cybersecurity incident response strategies.
 
+---
+
 ## Rethinking Incident Response Through the Lens of CSF 2.0
 
 To understand how incident response is evolving, we need to start with the NIST Cybersecurity Framework (CSF) 2.0.
@@ -40,6 +43,7 @@ This updated framework organizes cybersecurity governance into six core function
 | **Respond (RS)** | Response execution | 	Communicate, contain, and remediate incidents |
 | **Recover(RC)** | Service restoration and learning | Restore services and strengthen future defenses |
 
+---
 
 ## From Process-Driven to Governance-Led: A Shift in Incident Response Mindset
 To truly understand the shift introduced in SP 800-61r3, it helps to compare it with the previous version, SP 800-61r2, published back in 2012:
@@ -70,6 +74,8 @@ Here's how the old lifecycle maps to the updated model within the CSF 2.0 contex
 | Detection & Analysis                                  | - Detect  <br> - Identify (Improvement Category)     |
 | Containment, Eradication & Recovery                   | - Respond  <br> - Recover <br> - Identify (Improvement Category) |
 | Post-Incident Activity                                | - Identify (Improvement Category)                    |
+
+---
 
 ## Governance in Action: Aligning IR Strategy with the CSF 2.0 Core Functions
 
@@ -122,6 +128,8 @@ Here's how the old lifecycle maps to the updated model within the CSF 2.0 contex
 
 **Recovery is no longer the final step-it’s the bridge to resilience and adaptive learning.**
 
+---
+
 ## Supporting Tools and Additional Resources
 - **CPRT**
     - **Full Title**：[*Cybersecurity and Privacy Reference Tool*](https://csrc.nist.gov/projects/cprt)
@@ -140,6 +148,7 @@ Here's how the old lifecycle maps to the updated model within the CSF 2.0 contex
     - **Purpose**：Provide a set of recommended practices for integrating security into every phase of the software development life cycle ([SDLC](https://en.wikipedia.org/wiki/Systems_development_life_cycle))
     - **Use Case**：A structured framework for secure software development and supply chain risk management.
 
+---
 
 ## Strategic Priorities for Modernizing Incident Response
 
@@ -156,6 +165,7 @@ To effectively modernize their incident response and risk strategies, organizati
 ## Leadership and Board Considerations
 Executives and board members must ensure that incident response capabilities are not only resourced but embedded into organizational performance metrics, such as operational resilience KPIs and audit readiness.
 
+---
 
 ## Final Thoughts
 There was a time when incident response felt like putting out fires -- someone clicked a malicious phishing link, the internal network got compromised, and suddenly it’s 2 a.m. with SOC alarms blaring. We'd dive in, stop the bleeding, clean up the mess as best we could, write up the report, and hold the line until the next crisis came around.
@@ -171,6 +181,8 @@ NIST SP 800-61r3 isn’t just a rework of flowcharts or an update to templates. 
 Resilience doesn’t come from tools alone -- it’s built through a culture of unified action. When SOC analysts, IT leaders, operations teams, suppliers, and executives can respond as one -- not in silos -- that’s when true readiness takes root.
 
 Because in the end, resilience isn’t about how polished your roadmap looks. It’s about how your team responds when that roadmap no longer applies -- whether they can pivot fast, hold their ground, and steer the business through the storm.
+
+---
 
 ## Further Reading
 - [Digital Operational Resilience Act (DORA) – EIOPA](https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en)

@@ -26,7 +26,10 @@ Incident Response Recommendations and Considerations for Cybersecurity Risk Mana
 > 簡單來說，我認為此版本最大的差異在於 **「組織文化與角色認知的轉變」**:
 > **事件應變不再只是技術部門的責任，而是整個組織應共同參與的風險治理事項**
 
+
 此外，NIST 800 系列文件是 NIST 為資訊安全提供的廣泛指導之一，涵蓋風險評估、存取控制、隱私保護等多方面，SP 800-61r3 則專注於資安事件應變策略這一特定領域。
+
+---
 
 ## 事件應變架構重塑：從 CSF 2.0 看 IR 定位
 首先我們先來談談 NIST CSF 2.0 框架；此框架將資安治理分為六大核心功能（Functions），每一項皆與資安威脅應變密切相關：
@@ -39,6 +42,8 @@ Incident Response Recommendations and Considerations for Cybersecurity Risk Mana
 | **Detect (偵測/DE)** | 偵測與監控 | 發現惡意行為、異常徵象與入侵徵兆 |
 | **Respond (應變/RS)** | 應變行動 | 處置已確認事件，包括溝通、隔離、根除 |
 | **Recover (復原/RC)** | 恢復運作 | 復原受損服務、分析根因並改善防禦策略 |
+
+---
 
 ## 新舊概念轉變：從「流程導向」轉為「治理導向」
 要理解 SP 800-61r3 轉型後的概念差異，我們可以與之前一版本 SP 800-61r2（2012）進行對照：
@@ -71,6 +76,8 @@ Incident Response Recommendations and Considerations for Cybersecurity Risk Mana
 | Detection & Analysis                                  | - Detect  <br> - Identify (Improvement Category)     |
 | Containment, Eradication & Recovery                   | - Respond  <br> - Recover <br> - Identify (Improvement Category) |
 | Post-Incident Activity                                | - Identify (Improvement Category)                    |
+
+---
 
 ## 實務對應解析：CSF 2.0 + Incident Response
 ### Govern → 治理導向
@@ -122,6 +129,7 @@ Incident Response Recommendations and Considerations for Cybersecurity Risk Mana
 
 **災後復原不應只是結束，而是邁向組織韌性與學習成長的轉捩點。**
 
+---
 
 ## 相關工具與延伸資源
 - **CPRT**
@@ -142,6 +150,8 @@ Incident Response Recommendations and Considerations for Cybersecurity Risk Mana
     - **使用情境**：強化軟體供應鏈安全與內部安全開發實務
 
 
+---
+
 ## 現代化事件回應的策略優先事項
 NIST SP 800-61r3 明確指出：
 > **IR 不再只是孤立的技術任務，而是企業風險治理的關鍵支柱。**
@@ -152,6 +162,8 @@ NIST SP 800-61r3 明確指出：
 3. 導入自動化與協作工具（如 SOAR）以提升應變速度與處置效率
 4. 將事後審查制度轉化為例行過程，形成持續改進的關鍵驅動力
 
+---
+
 ## 高階主管與董事會的角色
 企業的高階主管與董事成員，應確保資安事件應變能力不僅有資源支援，更必須將其納入組織營運績效的關鍵指標中，例如：
 - 營運韌性（Operational Resilience）KPI
@@ -159,6 +171,8 @@ NIST SP 800-61r3 明確指出：
 - 治理成熟度模型（GRC Integration Metrics）
 
 資安事件應變已不再是技術部門的責任範疇，而是企業治理的一部分，必須自決策層級開始落實。
+
+---
 
 ## 結語反思
 曾經資安事件應變就像是在救火 - 有人點下了不懷好意的釣魚信、內網失守，凌晨兩點 SOC 告警大作。我們拼命止血、盡可能清理殘局、寫完事件報告後繼續撐著，直到下一場危機出現。
@@ -174,6 +188,7 @@ NIST SP 800-61r3 不只是流程圖的微調或表格的重新設計，它傳遞
 
 說到底，韌性不是那張規劃圖畫得多漂亮，而是當整張圖都失效時，你的團隊能不能迅速轉舵、穩住陣腳、挺過迎面而來的暴風雨。
 
+---
 
 ## 延伸閱讀
 - [Digital Operational Resilience Act (DORA，歐盟營運韌性法) – 歐洲保險和職業養老金管理局(EIOPA)](https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en)
