@@ -1,7 +1,6 @@
 ---
 title: 從威脅應變到治理韌性：全面解析 NIST SP 800-61r3 的戰略轉型
 date: 2025-04-22 20:08:35
-tags:
 cover_image: 'https://github.com/kevinchiu923/kevinchiu923.github.io/blob/main/source/_posts/%E5%BE%9E%E5%A8%81%E8%84%85%E6%87%89%E8%AE%8A%E5%88%B0%E6%B2%BB%E7%90%86%E9%9F%8C%E6%80%A7%EF%BC%9A%E5%85%A8%E9%9D%A2%E8%A7%A3%E6%9E%90-NIST-SP-800-61r3-%E7%9A%84%E6%88%B0%E7%95%A5%E8%BD%89%E5%9E%8B/zhtw_cover_img.png'
 ---
 
