@@ -53,12 +53,12 @@ Incident Response Recommendations and Considerations for Cybersecurity Risk Mana
 - Containment, Eradication, and Recovery（抑制、根除與復原階段）→ 控制事件範圍、消除威脅根源並恢復業務運作。
 - Post-Incident Activity（事後回顧與改進階段）→ 從事件中學習與優化整體防禦能力。
 
-![image](https://kevinchiu923.github.io/post/從威脅應變到治理韌性：全面解析-NIST-SP-800-61r3-的戰略轉型/SP_800-61r2.png)
+![](https://kevinchiu923.github.io/post/從威脅應變到治理韌性：全面解析-NIST-SP-800-61r3-的戰略轉型/SP_800-61r2.png)
 *Ref. [NIST SP 800-61r3](https://doi.org/10.6028/NIST.SP.800-61r3)*
 
 新版本 SP 800-61r3 則接軌 CSF 2.0 框架的六大核心功能細化提出新的資安事件應變生命週期模型 (Incident Response Life Cycle Model)。
 使得模型不再是「封閉式的步驟循環」，而是導入一種以資安風險為核心、具高彈性的「動態治理模式」。
-![image](https://kevinchiu923.github.io/post/從威脅應變到治理韌性：全面解析-NIST-SP-800-61r3-的戰略轉型/SP_800-61r3.png)
+![](https://kevinchiu923.github.io/post/從威脅應變到治理韌性：全面解析-NIST-SP-800-61r3-的戰略轉型/SP_800-61r3.png)
 *Ref. [NIST SP 800-61r3](https://doi.org/10.6028/NIST.SP.800-61r3)*
 
 具體對應如下表:
