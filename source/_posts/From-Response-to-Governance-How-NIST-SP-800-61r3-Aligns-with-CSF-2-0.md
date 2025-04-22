@@ -9,7 +9,7 @@ tags:
   - Cyber security
 categories:
   - Knowledge base
-cover_image: 'https://kevinchiu923.github.io/post/https://kevinchiu923.github.io/post/From-Response-to-Governance-How-NIST-SP-800-61r3-Aligns-with-CSF-2-0/cover_img.jpeg'
+cover_image: 'https://kevinchiu923.github.io/post/From-Response-to-Governance-How-NIST-SP-800-61r3-Aligns-with-CSF-2-0/cover_img.jpeg'
 ---
 
 This article looks at how the six core functions of CSF 2.0 can serve as more than just a framework — helping organizations craft incident response strategies that are not only practical, but deeply rooted in governance.
