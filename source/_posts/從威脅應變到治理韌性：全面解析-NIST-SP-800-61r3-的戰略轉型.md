@@ -4,11 +4,15 @@ date: 2025-04-22 20:08:35
 tags:
   - Traditional Chinese
   - 資安治理與策略
+  - 資安風險管理
+  - 資安事件應變
   - 資訊安全
 categories:
   - Knowledge base
 cover_image: 'https://kevinchiu923.github.io/post/從威脅應變到治理韌性：全面解析-NIST-SP-800-61r3-的戰略轉型/zhtw_cover_img.png'
 ---
+
+本文將探討組織如何將 CSF 2.0 的六大功能，轉化為具體可行且符合治理導向的資安事件應變策略。
 
 ## 簡介
 **[NIST SP 800-61r3](https://doi.org/10.6028/NIST.SP.800-61r3) 全名為：
