@@ -2,6 +2,7 @@
 title: 從威脅應變到治理韌性：全面解析 NIST SP 800-61r3 的戰略轉型
 date: 2025-04-22 20:08:35
 tags:
+cover_image: 'https://github.com/kevinchiu923/kevinchiu923.github.io/blob/main/source/_posts/%E5%BE%9E%E5%A8%81%E8%84%85%E6%87%89%E8%AE%8A%E5%88%B0%E6%B2%BB%E7%90%86%E9%9F%8C%E6%80%A7%EF%BC%9A%E5%85%A8%E9%9D%A2%E8%A7%A3%E6%9E%90-NIST-SP-800-61r3-%E7%9A%84%E6%88%B0%E7%95%A5%E8%BD%89%E5%9E%8B/zhtw_cover_img.png'
 ---
 
 ## 簡介
@@ -47,12 +48,12 @@ Incident Response Recommendations and Considerations for Cybersecurity Risk Mana
 - Containment, Eradication, and Recovery（抑制、根除與復原階段）→ 控制事件範圍、消除威脅根源並恢復業務運作。
 - Post-Incident Activity（事後回顧與改進階段）→ 從事件中學習與優化整體防禦能力。
 
-![image](https://hackmd.io/_uploads/SkfK01Hkxx.png)
+![image](https://github.com/kevinchiu923/kevinchiu923.github.io/blob/main/source/_posts/%E5%BE%9E%E5%A8%81%E8%84%85%E6%87%89%E8%AE%8A%E5%88%B0%E6%B2%BB%E7%90%86%E9%9F%8C%E6%80%A7%EF%BC%9A%E5%85%A8%E9%9D%A2%E8%A7%A3%E6%9E%90-NIST-SP-800-61r3-%E7%9A%84%E6%88%B0%E7%95%A5%E8%BD%89%E5%9E%8B/SP_800-61r2.png)
 *Ref. [NIST SP 800-61r3](https://doi.org/10.6028/NIST.SP.800-61r3)*
 
 新版本 SP 800-61r3 則接軌 CSF 2.0 框架的六大核心功能細化提出新的資安事件應變生命週期模型 (Incident Response Life Cycle Model)。
 使得模型不再是「封閉式的步驟循環」，而是導入一種以資安風險為核心、具高彈性的「動態治理模式」。
-![image](https://hackmd.io/_uploads/H1clmepRkl.png)
+![image](https://github.com/kevinchiu923/kevinchiu923.github.io/blob/main/source/_posts/%E5%BE%9E%E5%A8%81%E8%84%85%E6%87%89%E8%AE%8A%E5%88%B0%E6%B2%BB%E7%90%86%E9%9F%8C%E6%80%A7%EF%BC%9A%E5%85%A8%E9%9D%A2%E8%A7%A3%E6%9E%90-NIST-SP-800-61r3-%E7%9A%84%E6%88%B0%E7%95%A5%E8%BD%89%E5%9E%8B/SP_800-61r3.png)
 *Ref. [NIST SP 800-61r3](https://doi.org/10.6028/NIST.SP.800-61r3)*
 
 具體對應如下表:
