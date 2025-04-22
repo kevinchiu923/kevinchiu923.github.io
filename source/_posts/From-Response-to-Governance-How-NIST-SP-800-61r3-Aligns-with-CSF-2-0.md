@@ -3,12 +3,11 @@ title: 'From Response to Governance: How NIST SP 800-61r3 Aligns with CSF 2.0'
 date: 2025-04-22 23:03:25
 tags:
   - English
-  - Cybersecurity Governance and Strategy
   - Cybersecurity Risk Management
   - Incident Response
   - Cyber security
 categories:
-  - Knowledge base
+  - Cybersecurity Governance and Strategy
 cover_image: 'https://kevinchiu923.github.io/post/From-Response-to-Governance-How-NIST-SP-800-61r3-Aligns-with-CSF-2-0/cover_img.jpeg'
 ---
 
