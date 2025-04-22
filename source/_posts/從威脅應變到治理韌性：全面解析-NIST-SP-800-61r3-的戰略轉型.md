@@ -12,7 +12,7 @@ categories:
 cover_image: 'https://kevinchiu923.github.io/post/從威脅應變到治理韌性：全面解析-NIST-SP-800-61r3-的戰略轉型/zhtw_cover_img.png'
 ---
 
-本文將探討組織如何將 CSF 2.0 的六大功能，轉化為具體可行且符合治理導向的資安事件應變策略。
+本文將以資安長（CISO）或高階資安主管視角，探討組織如何將 CSF 2.0 的六大功能，轉化為具體可行且符合治理導向的資安事件應變策略。
 
 ## 簡介
 **[NIST SP 800-61r3](https://doi.org/10.6028/NIST.SP.800-61r3) 全名為：
