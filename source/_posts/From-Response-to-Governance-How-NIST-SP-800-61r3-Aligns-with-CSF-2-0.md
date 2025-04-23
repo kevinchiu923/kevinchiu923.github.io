@@ -172,13 +172,13 @@ There was a time when incident response felt like putting out fires -- someone c
 
 But that model simply doesn’t cut it anymore. Today, a single security incident isn’t just a technical issue -- it’s a full-blown business crisis. What follows isn’t just system recovery, but a chain reaction: regulatory scrutiny, plummeting customer trust, reputational damage, and a boardroom demanding answers.
 
-That’s why incident response can no longer be treated as an isolated technical task or a one-off procedural cycle -- it must be embedded into the core of organizational governance -- designed from day one as part of the organization’s risk strategy, embedded into planning, rehearsed regularly, and executed with precision.
+That’s why **incident response can no longer be treated as an isolated technical task or a one-off procedural cycle -- it must be embedded into the core of organizational governance** -- designed from day one as part of the organization’s risk strategy, embedded into planning, rehearsed regularly, and executed with precision.
 
 Real maturity isn’t about how many policies you’ve written or how detailed your workflows are. It’s about how your teams respond when things go wrong -- with clarity under pressure, speed in decision-making, and a willingness to take ownership.
 
-NIST SP 800-61r3 isn’t just a rework of flowcharts or an update to templates. It’s a signal that the bar has been raised: cybersecurity governance is shifting from fragmented procedures to holistic integration.
+NIST SP 800-61r3 isn’t just a rework of flowcharts or an update to templates. It’s a signal that the bar has been raised: **cybersecurity governance is shifting from fragmented procedures to holistic integration.**
 
-Resilience doesn’t come from tools alone -- it’s built through a culture of unified action. When SOC analysts, IT leaders, operations teams, suppliers, and executives can respond as one -- not in silos -- that’s when true readiness takes root.
+**Resilience doesn’t come from tools alone -- it’s built through a culture of unified action.** When SOC analysts, IT leaders, operations teams, suppliers, and executives can respond as one -- not in silos -- that’s when true readiness takes root.
 
 Because in the end, resilience isn’t about how polished your roadmap looks. It’s about how your team responds when that roadmap no longer applies -- whether they can pivot fast, hold their ground, and steer the business through the storm.
 
