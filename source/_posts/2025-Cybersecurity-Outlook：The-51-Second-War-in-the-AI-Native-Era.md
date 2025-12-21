@@ -63,7 +63,7 @@ Inventory first. Migration later. Delay both at your own risk.
 
 ---
 
-## Trend 1：The Need for Speed: When Breakout Time Is Measured in Seconds
+## Trend 1：The Need for Speed --- When Breakout Time Is Measured in Seconds
 
 By late 2024, the average breakout time — the window between initial compromise and lateral movement — had dropped below one hour. In extreme cases, it has fallen to **seconds**.
 
@@ -109,7 +109,7 @@ Mobile endpoints compound the problem. Patch delays and phishing susceptibility 
 
 ---
 
-## Trend 4：Emerging Frontiers: AI Poisoning and the Quantum Horizon
+## Trend 4：Emerging Frontiers --- AI Poisoning and the Quantum Horizon
 
 As organizations adopt AI at scale, attackers are beginning to target what matters most: **training data and model behavior**.
 
