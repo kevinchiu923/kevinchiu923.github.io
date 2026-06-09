@@ -128,6 +128,15 @@ A public-facing LLM application handling customer inquiries. Already in producti
 
 **Assessment outcome:** Conditional. Remain in production; remediate the monitoring gap within 60 days.
 
+### Summarization
+
+The management briefing below consolidates findings from all three systems into a single executive artifact. Seven critical findings, twelve high-severity findings, an average maturity score of 0.20 out of 5.0, and one No-Go verdict. The IT Ops AI Agent is the primary driver of the critical count — unscoped tool permissions and an absent human approval gate are conditions that cannot be accepted in a system with production execution authority. The HR RAG Chatbot and Customer Service LLM App carry Conditional status, each with a specific, bounded remediation required before full clearance.
+
+![Management Briefing — AegisAI (Part 1)](./AegisAI: The-Governance-Layer-Your-AI-Stack-Is-Missing/Management_briefing_01.png)
+![Management Briefing — AegisAI (Part 2)](./AegisAI: The-Governance-Layer-Your-AI-Stack-Is-Missing/Management_briefing_02.png)
+
+The improvement plan structures remediation into three phases. Weeks 1–2 address the four production blockers on the IT Ops agent — the findings that justify the No-Go verdict and must be resolved before any further expansion. Weeks 3–6 cover high-priority control gaps across all three systems, including prompt injection defense, retrieval authorization enforcement, and session isolation. Weeks 7–12 establish the governance foundation: system inventory, risk classification methodology, and the red team testing program that prevents new systems from entering production carrying the same gaps. The OWASP cross-system exposure table makes the threat coverage baseline concrete — most categories are currently not covered, which is the expected starting point for an early-stage AI portfolio, not an anomaly.
+
 ---
 
 Three systems. Same organization. One No-Go, two Conditionals, different remediation timelines, different engineering owners. Without a governance layer, none of that is visible in a structured way. The risk exists in the system — the platform just makes it legible.
