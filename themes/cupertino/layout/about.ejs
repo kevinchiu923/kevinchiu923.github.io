@@ -28,8 +28,9 @@
                     </div>
                     <% }) %>
             </div>
-            <!-- <% } else { %>
-            <p>No about added yet!</p>
-            <% } %> -->
             <%- partial('_partial/paginator') %>
+        <% } %>
+        <% if (page.content) { %>
+            <div class="about-content"><%- page.content %></div>
+        <% } %>
 </div>
